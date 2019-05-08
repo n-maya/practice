@@ -68,7 +68,7 @@
 
         </style>
         <!--Bootstrap4-->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href=href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
         <div class="flex-center position-ref full-height">
