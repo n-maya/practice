@@ -19,7 +19,7 @@
 <body>
   <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
       <div class="container">
-          <a class="navbar-brand" href="{{ url('/') }}">
+          <a class="navbar-brand" href="{{ url('/memos/home') }}">
           Memo Manager
           </a>
 

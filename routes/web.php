@@ -29,3 +29,4 @@ Route::get('/login/{social}/callback', 'Auth\LoginController@handleProviderCallb
 
 //Memos 2019年5月8日
 Route::get('/memos/home', 'MemosController@index')->name('top');
+Route::resource('/memos', 'MemosController', ['only' => ['create', 'store', 'edit', 'update', 'destroy']]);
