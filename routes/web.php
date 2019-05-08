@@ -21,5 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //facebook認証
 
-Route::get('/login/{social}', 'Auth\LoginController@socialLogin')->where('social', 'facebook|twitter');
-Route::get('/login/{social}/callback', 'Auth\LoginController@handleProviderCallback')->where('social', 'facebook|twitter');
+Route::get('/login/{social}', 'Auth\LoginController@socialLogin')
+->where('social', 'facebook|twitter');
+Route::get('/login/{social}/callback', 'Auth\LoginController@handleProviderCallback')
+->where('social', 'facebook|twitter');
