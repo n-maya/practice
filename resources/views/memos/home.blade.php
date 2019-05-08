@@ -96,7 +96,7 @@
                       <div class="row">
                               <div class="col-md-3 p-2">
                                 <div class="card text-center pt-3">
-                                <a href="/memos/home">Memo Manager</a>
+                                <a href="">あああ</a>
                                 </div>
                               </div>
                               <div class="col-md-3 p-2">

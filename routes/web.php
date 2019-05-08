@@ -25,3 +25,7 @@ Route::get('/login/{social}', 'Auth\LoginController@socialLogin')
 ->where('social', 'facebook|twitter');
 Route::get('/login/{social}/callback', 'Auth\LoginController@handleProviderCallback')
 ->where('social', 'facebook|twitter');
+
+
+//Memos 2019年5月8日
+Route::get('/memos/home', 'MemosController@index')->name('top');
