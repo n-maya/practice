@@ -10,14 +10,14 @@
 
     <div class="row">
         @foreach ($memos as $memo)
-            <div class="mb-4 col-lg-4 ">
-            <div class="card small">
-                <div class="card-header h5">
+            <div class="mb-4 col-lg-4">
+            <div class="card small" >
+                <div class="card-header h5" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                     {{ $memo->title }}
                 </div>
 
                 <div class="card-body">
-                    <p class="card-text">
+                    <p class="card-text" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                         {!! nl2br(e(str_limit($memo->body, 200))) !!}
                     </p>
                 </div>
