@@ -49,7 +49,7 @@
                     </div>
 
                     <div class="mt-5">
-                        <a class="btn btn-secondary" href="{{ route('memos.edit', ['memo' => $memo]) }}">
+                        <a class="btn btn-secondary" href="{{ route('top') }}">
                             キャンセル
                         </a>
 
