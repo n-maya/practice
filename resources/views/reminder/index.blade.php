@@ -84,7 +84,7 @@
   <div class="col-xs-12">
     <h3 class="text-center mb40 mt60">We remind...</h3>
             @foreach ($reminds as $remind)
-            <div class="card small" >
+            <div class="card small mb-3" >
 
                 <div class="card-body">
                     <p class="card-text" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -108,8 +108,9 @@
                     <button class="ml-1 btn btn-outline-danger btn-sm">削除する</button>
                     </form>
                 </div>
-            @endforeach
             </div>
+            @endforeach
+
   </div>
 </div>
 </div>
