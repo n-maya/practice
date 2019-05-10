@@ -77,4 +77,13 @@ class Kernel extends HttpKernel
         \Illuminate\Routing\Middleware\SubstituteBindings::class,
         \Illuminate\Auth\Middleware\Authorize::class,
     ];
+
+    protected $commands = [
+        Commands\SendRemindMail::class,
+    ];
+
+    protected function schedule(Schedule $schedule)
+    {
+         $schedule->command('command:send_remind_mail')->everyMinute();
+    }
 }

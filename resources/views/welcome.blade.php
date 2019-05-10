@@ -108,7 +108,7 @@
                               </div>
                               <div class="col-md-3 p-2">
                                 <div class="card text-center pt-3">
-                                <a href="">あああ</a>
+                                <a href="/reminder/index">Reminder</a>
                                 </div>
                               </div>
                               <div class="col-md-3 p-2">
