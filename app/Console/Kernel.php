@@ -39,13 +39,4 @@ class Kernel extends ConsoleKernel
 
         require base_path('routes/console.php');
     }
-
-    protected $commands = [
-        Commands\SendRemindMail::class,
-    ];
-
-    protected function schedule(Schedule $schedule)
-    {
-         $schedule->command('command:send_remind_mail')->everyMinute();
-    }
 }
