@@ -38,3 +38,7 @@ Route::resource('/reminder', 'ReminderController', ['only' => ['store', 'destroy
 
 //Garelly 2019年5月12日
 Route::resource('/gallery', 'GalleryController', ['only' => ['index', 'create', 'store', 'show', 'destroy']]);
+
+//Calendar 2019年5月13日
+Route::get('events', 'EventController@index')->name('events.index');
+Route::post('events', 'EventController@addEvent')->name('events.add');

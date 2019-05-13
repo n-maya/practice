@@ -161,7 +161,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
- 
+
         /*
          * Package Service Providers...
          */
@@ -179,6 +179,11 @@ return [
          * Socialite
          */
         Laravel\Socialite\SocialiteServiceProvider::class,
+
+        /*
+         * Calendar
+         */
+        MaddHatter\LaravelFullcalendar\ServiceProvider::class,
 
     ],
 
@@ -234,8 +239,12 @@ return [
         /*
          * Socialite
          */
-
          'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+
+         /*
+          * Calendar
+          */
+          'Calendar' => MaddHatter\LaravelFullcalendar\Facades\Calendar::class,
     ],
 
 ];
