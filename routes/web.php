@@ -34,3 +34,7 @@ Route::resource('/memos', 'MemosController', ['only' => ['create', 'store', 'edi
 //Reminder 2019年5月10日
 Route::get('/reminder/index', 'ReminderController@index')->name('reminder');
 Route::resource('/reminder', 'ReminderController', ['only' => ['store', 'destroy']]);
+
+
+//Garelly 2019年5月12日
+Route::resource('/gallery', 'GalleryController', ['only' => ['index', 'create', 'store', 'show', 'destroy']]);
