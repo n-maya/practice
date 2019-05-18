@@ -13,16 +13,21 @@ class BackgroundController extends Controller
 {
     public function home(){
       $records = Color::orderBy('id', 'asc')->get();
-
       return view('background-switcher.home', ['records' => $records]);
     }
 
     public function switch(Request $request){
+      $params = $request->validate([
+          'id' => 'required',
+          'topbar' => 'required',
+          'body' => 'required',
+      ]);
 
-      $user = Color::firstOrNew(['id' => '1']);
-      $user['hoge'] = 1;
-      $user->save();
+      $record = Color::findOrFail($params->id);
+      $record->fill($params)->save();
 
+      $records = Color::orderBy('id', 'asc')->get();
+      return view('background-switcher.home', ['records' => $records]);
       }
 
 }

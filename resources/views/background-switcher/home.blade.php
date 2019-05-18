@@ -11,13 +11,13 @@
 
 
   <fieldset class="mb-4 mt-4 ml-3">
-    <form method="POST" action="{{ route('background.switch') }}">
+    <form method="POST" action="{{ route('background.switch')}}">
         @csrf
 
             <div class="form-group" class=”form-inline”>
 
               <div>
-                <label for="title">
+                <label for="id">
                     ID
                 </label>
                 <select name="id">
@@ -59,27 +59,27 @@
 
             <div>
 
-            <label for="title">
+            <label for="body">
                 Body
             </label>
 
               <input
-                  id="topbar"
-                  name="topbar"
+                  id="body"
+                  name="body"
                   type="radio"
                   value="red"
               >赤
 
               <input
-                  id="topbar"
-                  name="topbar"
+                  id="body"
+                  name="body"
                   type="radio"
                   value="blue"
               >青
 
               <input
-                  id="topbar"
-                  name="topbar"
+                  id="body"
+                  name="body"
                   type="radio"
                   value="white"
               >白
@@ -92,8 +92,8 @@
 
 
           </div>
-
-
+          </form>
+          </fieldset>
 </div>
 </div>
 </div>
