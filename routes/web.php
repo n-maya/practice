@@ -50,3 +50,18 @@ Route::get('/calendarPro/create', 'CalendarController@create');
 //Background-Switcher
 Route::get('/background-switcher/home', 'BackgroundController@home');
 Route::post('/background-switcher/home', 'BackgroundController@switch')->name('background.switch');
+
+//approval 2019年5月18日
+use App\Comment;
+Route::get('/approval/front', function(){
+  $comments = Comment::where('approve','1')->get();
+  return view('/approval/front')->with('comments', $comments);
+});
+
+Route::post('/commentApproval', 'CommentsController@store');
+Route::post('/toggle-approve', 'CommentsController@approval');
+
+Route::get('/approval/dash', function(){
+  $comments = Comment::orderBy('created_at','desc')->get();
+  return view('/approval/dashboard')->with('comments', $comments);
+});
