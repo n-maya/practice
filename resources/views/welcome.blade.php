@@ -122,6 +122,28 @@
                                 </div>
                               </div>
                       </div>
+                      <div class="row">
+                              <div class="col-md-3 p-2">
+                                <div class="card text-center pt-3">
+                                <a href="/calendarPro/calendar">CalendarPro</a>
+                                </div>
+                              </div>
+                              <div class="col-md-3 p-2">
+                                <div class="card text-center pt-3">
+                                <a href="background-switcher/home">Background-Switcher</a>
+                                </div>
+                              </div>
+                              <div class="col-md-3 p-2">
+                                <div class="card text-center pt-3">
+                                <a href="">aaa</a>
+                                </div>
+                              </div>
+                              <div class="col-md-3 p-2">
+                                <div class="card text-center pt-3">
+                                <a href="">aaa</a>
+                                </div>
+                              </div>
+                      </div>
         <!-- links -->
                 </div>
         </div>

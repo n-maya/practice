@@ -48,7 +48,7 @@ class MemosController extends Controller
           'body' => 'required|max:2000',
       ]);
 
-      $memo = Memo::findOrFail($memo_id);
+      $memo = Color::findOrFail($id);
       $memo->fill($params)->save();
 
       $memos = Memo::orderBy('created_at', 'desc')->get();

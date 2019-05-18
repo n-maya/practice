@@ -42,3 +42,11 @@ Route::resource('/gallery', 'GalleryController', ['only' => ['index', 'create', 
 //Calendar 2019年5月13日
 Route::get('/calendar/events', 'EventController@index')->name('events.index');
 Route::post('/calendar/events', 'EventController@addEvent')->name('events.add');
+
+//CalendarPro 2019年5月15日
+Route::get('/calendarPro/calendar', 'CalendarController@index')->name('events.index');
+Route::get('/calendarPro/create', 'CalendarController@create');
+
+//Background-Switcher
+Route::get('/background-switcher/home', 'BackgroundController@home');
+Route::post('/background-switcher/home', 'BackgroundController@switch')->name('background.switch');
