@@ -33,7 +33,7 @@ class CommentsController extends Controller
       $comment->approve=$approveVal;
       $comment->save();
 
-      return back();
+      return redirect('/approval/front');
     }
 
 }
