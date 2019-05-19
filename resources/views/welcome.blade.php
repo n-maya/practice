@@ -24,6 +24,15 @@
                 height: 100vh;
             }
 
+            @media screen and (max-width: 1024px){
+              html, body {
+                  height: 170vh;
+              }
+              .full-height {
+                  height: 170vh;
+              }
+            }
+
             .flex-center {
                 align-items: center;
                 display: flex;
@@ -99,7 +108,8 @@
                     Practice2019
                 </div>
             </div>
-        <!-- links -->
+
+                      <!-- links 1行目-->
                       <div class="row">
                               <div class="col-md-3 p-2">
                                 <div class="card text-center pt-3">
@@ -122,6 +132,9 @@
                                 </div>
                               </div>
                       </div>
+
+                      <!-- links 2行目-->
+
                       <div class="row">
                               <div class="col-md-3 p-2">
                                 <div class="card text-center pt-3">
@@ -144,7 +157,32 @@
                                 </div>
                               </div>
                       </div>
-        <!-- links -->
+
+                      <!-- links 3行目-->
+
+                      <div class="row">
+                              <div class="col-md-3 p-2">
+                                <div class="card text-center pt-3">
+                                <a href="">xxx</a>
+                                </div>
+                              </div>
+                              <div class="col-md-3 p-2">
+                                <div class="card text-center pt-3">
+                                <a href="">xxx</a>
+                                </div>
+                              </div>
+                              <div class="col-md-3 p-2">
+                                <div class="card text-center pt-3">
+                                <a href="">xxx</a>
+                                </div>
+                              </div>
+                              <div class="col-md-3 p-2">
+                                <div class="card text-center pt-3">
+                                <a href="">xxx</a>
+                                </div>
+                              </div>
+                      </div>
+
                 </div>
         </div>
     </body>
