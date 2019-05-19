@@ -65,3 +65,7 @@ Route::get('/approval/dash', function(){
   $comments = Comment::orderBy('created_at','desc')->get();
   return view('/approval/dashboard')->with('comments', $comments);
 });
+
+//sendemail 2019年5月19日
+Route::get('/mail/sendemail', 'SendEmailController@index');
+Route::post('/sendemail/send', 'SendEmailController@send');

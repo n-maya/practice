@@ -153,7 +153,7 @@
                               </div>
                               <div class="col-md-3 p-2">
                                 <div class="card text-center pt-3">
-                                <a href="">aaa</a>
+                                <a href="/mail/sendemail">Simple Email Sender</a>
                                 </div>
                               </div>
                       </div>
